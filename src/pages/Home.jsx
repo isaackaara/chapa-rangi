@@ -80,9 +80,9 @@ const steps = [
 
 const testimonials = [
   {
-    quote: "Tessa completely transformed how we present ourselves. Our guests now recognise our brand before they even arrive. It just feels like us.",
-    author: "Sarah M.",
-    role: "Bundu Lodge, Laikipia",
+    quote: "Tessa understood what we needed before we could even articulate it. The brand finally feels like us.",
+    author: "Grace N.",
+    role: "Co-founder, Sandai Weavers",
   },
   {
     quote: "I used to spend hours making social posts that never looked right. Now I have templates that take minutes, and they actually look professional.",
@@ -101,13 +101,13 @@ const projects = [
     name: 'Sandai Weavers',
     slug: 'sandai-weavers',
     category: 'Brand Identity',
-    image: 'https://images.unsplash.com/photo-1642761550320-df342789c151?w=700&h=467&fit=crop',
+    image: '/portfolio/sandai-weavers.jpeg',
   },
   {
-    name: 'Bundu Lodge',
-    slug: 'bundu-lodge',
-    category: 'Brand Refresh',
-    image: 'https://images.unsplash.com/photo-1645958852684-419cf6dece63?w=700&h=467&fit=crop',
+    name: 'Bundu Cafe',
+    slug: 'bundu-cafe',
+    category: 'Brand Identity',
+    image: '/portfolio/bundu cafe.webp',
   },
 ]
 

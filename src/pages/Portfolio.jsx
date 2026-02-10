@@ -192,7 +192,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-wrap gap-2"
           >
-            {['All', 'Brand Identity', 'Brand Refresh', 'Social Media', 'Campaign Design', 'Event Campaign', 'Web Design'].map((cat, i) => (
+            {['All', 'Brand Identity', 'Social Media', 'Event Campaign', 'Web Design'].map((cat, i) => (
               <span
                 key={cat}
                 className={`text-[10px] tracking-[0.15em] uppercase px-4 py-2 rounded-sm cursor-default transition-colors duration-200 ${
