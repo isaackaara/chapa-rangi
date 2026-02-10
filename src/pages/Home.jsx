@@ -87,7 +87,7 @@ const testimonials = [
   {
     quote: "I used to spend hours making social posts that never looked right. Now I have templates that take minutes, and they actually look professional.",
     author: "James K.",
-    role: "Artisan Footprints Ltd",
+    role: "Founder, African Footprints",
   },
   {
     quote: "She really listened. The brand she created wasn't just beautiful. It captured exactly what we're about as a school and community.",
