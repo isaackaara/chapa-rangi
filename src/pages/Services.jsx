@@ -91,7 +91,7 @@ export default function Services() {
             <AnimatedSection>
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl shadow-black/20">
                 <img
-                  src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=800&h=600&fit=crop"
+                  src="/web-design-service.png"
                   alt="Web design and development"
                   className="w-full h-full object-cover"
                 />

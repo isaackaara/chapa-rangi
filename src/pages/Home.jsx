@@ -32,7 +32,7 @@ const services = [
     title: 'Web Design & Development',
     desc: 'A professional website that looks great, loads fast, and makes it easy for customers to find you.',
     price: 'From 80,000 KES',
-    image: 'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600&h=450&fit=crop',
+    image: '/web-design-service.png',
   },
 ]
 
