@@ -85,9 +85,9 @@ const testimonials = [
     role: "Co-founder, Sandai Weavers",
   },
   {
-    quote: "I used to spend hours making social posts that never looked right. Now I have templates that take minutes, and they actually look professional.",
+    quote: "Tessa didn't just design logos — she understood our whole world. Each business has its own personality now, but they all feel like family.",
     author: "James K.",
-    role: "Founder, African Footprints",
+    role: "Founder, African Footprints / Sandai Farm",
   },
   {
     quote: "She really listened. The brand she created wasn't just beautiful. It captured exactly what we're about as a school and community.",
@@ -104,10 +104,22 @@ const projects = [
     image: '/portfolio/sandai-weavers.jpeg',
   },
   {
+    name: 'African Footprints',
+    slug: 'african-footprints',
+    category: 'Brand Identity',
+    image: '/site-pics/04-sandai-weavers/mockups/african-footprints-collection-mockup.png',
+  },
+  {
     name: 'Bundu Cafe',
     slug: 'bundu-cafe',
     category: 'Brand Identity',
     image: '/portfolio/bundu cafe.webp',
+  },
+  {
+    name: 'Paradise Gardens',
+    slug: 'paradise-gardens',
+    category: 'Brand Identity',
+    image: '/site-pics/02-paradise-gardens/mockups/pg-logo-on-cream.png',
   },
 ]
 
@@ -329,7 +341,7 @@ export default function Home() {
       <WaveDivider from="teal" to="cream" flip />
 
       {/* Recent Projects */}
-      <section className="py-20 lg:py-28 bg-cream">
+      <section className="py-20 lg:py-28 bg-cream-dark/40">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading>Recent Projects</SectionHeading>
           <div className="grid md:grid-cols-2 gap-8">
