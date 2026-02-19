@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 import PageTransition from '../components/PageTransition'
 import PageHeader from '../components/PageHeader'
 import SectionHeading from '../components/SectionHeading'
@@ -77,7 +78,7 @@ export default function Contact() {
     setStatus('sending')
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xykdpqgv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -90,6 +91,12 @@ export default function Contact() {
       })
 
       if (response.ok) {
+        // Send auto-reply via EmailJS (don't block on failure)
+        emailjs.send('service_zlm2so2', 'template_g4kc4ub', {
+          from_name: formData.firstName,
+          from_email: formData.email,
+        }, 'H13DJa7NBnTDyu4Hb').catch(() => {})
+
         setStatus('sent')
         setFormData({ firstName: '', lastName: '', email: '', projectType: '', message: '' })
       } else {

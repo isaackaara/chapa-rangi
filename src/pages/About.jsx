@@ -163,7 +163,7 @@ export default function About() {
           </AnimatedSection>
         </div>
       </section>
-      <WaveDivider from="teal" to="cream" flip />
+      <div className="bg-teal"><div className="max-w-4xl mx-auto"><div className="h-px bg-cream/10" /></div></div>
     </PageTransition>
   )
 }

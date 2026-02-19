@@ -17,7 +17,7 @@ const mainServices = [
     desc: "A strong brand identity is the foundation for everything else: your Instagram, your menus, your signage. This package gives you a cohesive look you can use across every touchpoint.",
     cta: 'Start Your Brand',
     color: 'teal',
-    image: 'https://images.unsplash.com/photo-1631089819675-ce4528460a32?w=600&h=400&fit=crop',
+    image: '/services/brand-identity-design.jpg',
   },
   {
     title: 'Social Media Content',
@@ -27,7 +27,7 @@ const mainServices = [
     desc: "Consistency builds trust. But when you're running a business, finding time to design posts is hard. This package handles it, so you show up regularly without the stress.",
     cta: 'Get Consistent',
     color: 'pink',
-    image: 'https://images.unsplash.com/photo-1750235962826-ac7225ca4f01?w=600&h=400&fit=crop',
+    image: '/services/social-media-content.jpg',
   },
   {
     title: 'Event & Campaign Design',
@@ -37,7 +37,7 @@ const mainServices = [
     desc: "Whether you're launching a new menu, hosting a market, or promoting a special offer, your campaign materials should look professional and feel cohesive.",
     cta: 'Plan My Campaign',
     color: 'teal',
-    image: 'https://images.unsplash.com/photo-1763692108454-6cfa2b0af5c1?w=600&h=400&fit=crop',
+    image: '/services/Event Campaign Design.jpg',
   },
   {
     title: 'Brand Refresh',
@@ -47,7 +47,7 @@ const mainServices = [
     desc: "Sometimes your brand just needs an update, not a complete overhaul. This package modernizes your look while keeping what still works.",
     cta: 'Refresh My Brand',
     color: 'pink',
-    image: 'https://images.unsplash.com/photo-1604148390744-de117e9cedce?w=600&h=400&fit=crop',
+    image: '/services/brand-identity-design.jpg',
   },
 ]
 
@@ -91,7 +91,7 @@ export default function Services() {
             <AnimatedSection>
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl shadow-black/20">
                 <img
-                  src="/web-design-service.png"
+                  src="/services/Web Design & Development.jpg"
                   alt="Web design and development"
                   className="w-full h-full object-cover"
                 />
@@ -106,7 +106,7 @@ export default function Services() {
                 Your brand deserves a home online that works as hard as you do.
               </p>
               <p className="text-cream/70 text-sm leading-relaxed mb-6">
-                A professional website isn't a luxury anymore — it's where most of your customers will meet you first. Whether you need a simple site to share your story or a full booking platform, I design websites that look great, load fast, and make it easy for people to reach you.
+                A professional website isn't a luxury anymore. It's where most of your customers will meet you first. Whether you need a simple site to share your story or a full booking platform, I design websites that look great, load fast, and make it easy for people to reach you.
               </p>
               <div className="flex flex-wrap gap-3 mb-5">
                 <span className="text-xs tracking-wider uppercase bg-cream/10 px-3 py-1 rounded-sm text-cream">80,000 – 150,000+ KES</span>

@@ -7,7 +7,7 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
 
   // Normal: wave rises up from bottom, "from" color is background, "to" color fills the wave rising up
   // Flip: wave hangs down from top, "from" color fills the wave hanging down, "to" color is background
-  // No CSS rotation needed — we just draw different SVG paths
+  // No CSS rotation needed, we just draw different SVG paths
 
   if (flip) {
     // Wave hangs down: from-color on top (wave), to-color on bottom (background)

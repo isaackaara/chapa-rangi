@@ -14,25 +14,25 @@ const services = [
     title: 'Brand Identity Kit',
     desc: 'Logo, colours, typography, and a brand guide that ties it all together. Everything you need to look cohesive from day one.',
     price: 'From 35,000 KES',
-    image: 'https://images.unsplash.com/photo-1631089819675-ce4528460a32?w=600&h=450&fit=crop',
+    image: '/services/brand-identity-design.jpg',
   },
   {
     title: 'Social Media Content',
     desc: 'Templates and graphics so your Instagram actually matches your vibe, without the monthly panic.',
     price: 'From 20,000 KES/month',
-    image: 'https://images.unsplash.com/photo-1750235962826-ac7225ca4f01?w=600&h=450&fit=crop',
+    image: '/services/social-media-content.jpg',
   },
   {
     title: 'Event Campaign Design',
     desc: 'Posters, social graphics, and campaign materials that make your launch or event look incredible.',
     price: 'From 15,000 KES',
-    image: 'https://images.unsplash.com/photo-1763692108454-6cfa2b0af5c1?w=600&h=450&fit=crop',
+    image: '/services/Event Campaign Design.jpg',
   },
   {
     title: 'Web Design & Development',
     desc: 'A professional website that looks great, loads fast, and makes it easy for customers to find you.',
     price: 'From 80,000 KES',
-    image: '/web-design-service.png',
+    image: '/services/Web Design & Development.jpg',
   },
 ]
 
@@ -80,19 +80,19 @@ const steps = [
 
 const testimonials = [
   {
-    quote: "Tessa understood what we needed before we could even articulate it. The brand finally feels like us.",
-    author: "Grace N.",
-    role: "Co-founder, Sandai Weavers",
-  },
-  {
-    quote: "Tessa didn't just design logos — she understood our whole world. Each business has its own personality now, but they all feel like family.",
-    author: "James K.",
+    quote: "Tessa didn't just design logos. She understood our whole world. Each business has its own personality now, but they all feel like family.",
+    author: "Petra",
     role: "Founder, African Footprints / Sandai Farm",
   },
   {
     quote: "She really listened. The brand she created wasn't just beautiful. It captured exactly what we're about as a school and community.",
-    author: "Anna W.",
-    role: "Mt. Kenya Waldorf School",
+    author: "Jessi",
+    role: "Director, Mt. Kenya Waldorf School",
+  },
+  {
+    quote: "Tessa drew exactly what I had in my head but couldn't describe. The logo feels like Paradise Gardens. It's us.",
+    author: "Denise",
+    role: "Owner, Paradise Gardens",
   },
 ]
 
@@ -101,25 +101,25 @@ const projects = [
     name: 'Sandai Weavers',
     slug: 'sandai-weavers',
     category: 'Brand Identity',
-    image: '/portfolio/sandai-weavers.jpeg',
+    image: '/portfolio/sandai-weavers.jpg',
   },
   {
     name: 'African Footprints',
     slug: 'african-footprints',
     category: 'Brand Identity',
-    image: '/site-pics/04-sandai-weavers/mockups/african-footprints-collection-mockup.png',
+    image: '/portfolio/african-footprints.jpg',
   },
   {
     name: 'Bundu Cafe',
     slug: 'bundu-cafe',
     category: 'Brand Identity',
-    image: '/portfolio/bundu cafe.webp',
+    image: '/portfolio/bundu-cafe.jpg',
   },
   {
-    name: 'Paradise Gardens',
-    slug: 'paradise-gardens',
-    category: 'Brand Identity',
-    image: '/site-pics/02-paradise-gardens/mockups/pg-logo-on-cream.png',
+    name: 'Mt. Kenya Waldorf',
+    slug: 'mt-kenya-waldorf',
+    category: 'Event Campaign',
+    image: '/portfolio/mt. kenya waldorf.jpg',
   },
 ]
 
@@ -251,8 +251,8 @@ export default function Home() {
             >
               <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-2xl shadow-charcoal/10">
                 <img
-                  src="https://images.unsplash.com/photo-1742222880687-2c51312715ae?w=800&h=1000&fit=crop"
-                  alt="Creative design workspace with warm tones"
+                  src="/site-pics/balazs-ketyi-LPWl2pEVGKc-unsplash.jpg"
+                  alt="Design workspace with colour swatches, Pantone samples, and logo sketches on iPad"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -341,7 +341,7 @@ export default function Home() {
       <WaveDivider from="teal" to="cream" flip />
 
       {/* Recent Projects */}
-      <section className="py-20 lg:py-28 bg-cream-dark/40">
+      <section className="py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading>Recent Projects</SectionHeading>
           <div className="grid md:grid-cols-2 gap-8">
@@ -382,7 +382,7 @@ export default function Home() {
       {/* How It Works */}
       <HowItWorks />
 
-      {/* Principles - Green asterisks as icons */}
+      {/* Principles - Pink asterisks as icons */}
       <section className="py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionHeading color="charcoal">How I work</SectionHeading>
@@ -390,7 +390,7 @@ export default function Home() {
             {principles.map((p, i) => (
               <AnimatedSection key={p.title} delay={i * 0.1}>
                 <Asterisk
-                  color="green"
+                  color="pink"
                   size={44}
                   animate="spin"
                   delay={i * 0.12}
