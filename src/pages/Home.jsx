@@ -85,9 +85,9 @@ const testimonials = [
     role: "Founder, African Footprints / Sandai Farm",
   },
   {
-    quote: "She really listened. The brand she created wasn't just beautiful. It captured exactly what we're about as a school and community.",
-    author: "Jessi",
-    role: "Director, Mt. Kenya Waldorf School",
+    quote: "Working with Tessa was transformative for our school. She helped us clarify and shape our brand, ensuring it truly reflected our vision and values. The flyers and marketing materials she created were not only beautiful and cohesive, but fully aligned with the spirit and wishes of our school.",
+    author: "Jessi Allmendinger",
+    role: "Founding parent, Waldorf school",
   },
   {
     quote: "Tessa drew exactly what I had in my head but couldn't describe. The logo feels like Paradise Gardens. It's us.",
@@ -200,7 +200,7 @@ export default function Home() {
       {/* Hero */}
       <section ref={heroRef} className="relative pt-24 lg:pt-32 pb-20 lg:pb-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -249,9 +249,9 @@ export default function Home() {
               className="relative"
               style={{ y: heroImageY }}
             >
-              <div className="aspect-[4/5] rounded-sm overflow-hidden shadow-2xl shadow-charcoal/10">
+              <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-2xl shadow-charcoal/10">
                 <img
-                  src="/site-pics/balazs-ketyi-LPWl2pEVGKc-unsplash.jpg"
+                  src="/hero-image-v2.jpg"
                   alt="Design workspace with colour swatches, Pantone samples, and logo sketches on iPad"
                   className="w-full h-full object-cover"
                 />
@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* What We Design */}
-      <section className="py-20 lg:py-28 bg-warm-white/50">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
             <SectionHeading>What we design</SectionHeading>
@@ -315,7 +315,7 @@ export default function Home() {
       </section>
 
       {/* Who I Work With */}
-      <WaveDivider from="cream" to="teal" />
+      <WaveDivider from="white" to="teal" />
       <section className="bg-teal py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
