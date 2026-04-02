@@ -101,25 +101,25 @@ const projects = [
     name: 'Sandai Weavers',
     slug: 'sandai-weavers',
     category: 'Brand Identity',
-    image: '/portfolio/sandai-weavers.jpg',
+    image: '/portfolio/sandai-weavers-cover.jpg',
   },
   {
     name: 'African Footprints',
     slug: 'african-footprints',
     category: 'Brand Identity',
-    image: '/portfolio/african-footprints.jpg',
+    image: '/portfolio/african-footprints-cover.jpg',
   },
   {
     name: 'Bundu Café',
     slug: 'bundu-cafe',
     category: 'Brand Identity',
-    image: '/portfolio/bundu-cafe.jpg',
+    image: '/portfolio/bundu-cafe-cover.jpg',
   },
   {
     name: 'Mt. Kenya Waldorf',
     slug: 'mt-kenya-waldorf',
     category: 'Event Campaign',
-    image: '/portfolio/mt. kenya waldorf.jpg',
+    image: '/portfolio/mt-kenya-waldorf-cover.jpg',
   },
 ]
 
