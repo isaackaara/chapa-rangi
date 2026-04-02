@@ -130,19 +130,20 @@ function ImageGallery({ images }) {
   const tallImg = images.find(img => img.span === 'tall')
   const wideImg = images.find(img => img.span === 'wide')
   const squareImg = images.find(img => img.span === 'square')
+  const extraImages = images.filter(img => img.span === 'extra')
 
   return (
     <section className="pb-20 lg:pb-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-4 md:space-y-6">
-        {/* Row 1: Full-bleed cinematic image */}
+        {/* Row 1: Full-bleed image — contain mode to show the whole image */}
         {fullImg && (
           <AnimatedSection>
             <motion.div
-              className="aspect-[21/9] rounded-sm overflow-hidden shadow-lg shadow-charcoal/5"
+              className="rounded-sm overflow-hidden shadow-lg shadow-charcoal/5 bg-warm-white"
               whileHover={{ scale: 1.005 }}
               transition={{ duration: 0.5 }}
             >
-              <img src={fullImg.src} alt={fullImg.alt} className="w-full h-full object-cover" />
+              <img src={fullImg.src} alt={fullImg.alt} className="w-full h-auto" />
             </motion.div>
           </AnimatedSection>
         )}
@@ -188,6 +189,23 @@ function ImageGallery({ images }) {
                 </AnimatedSection>
               )}
             </div>
+          </div>
+        )}
+
+        {/* Row 3: Extra images in a side-by-side grid */}
+        {extraImages.length > 0 && (
+          <div className={`grid gap-4 md:gap-6 ${extraImages.length === 1 ? 'grid-cols-1' : 'md:grid-cols-2'}`}>
+            {extraImages.map((img, i) => (
+              <AnimatedSection key={i} delay={0.1 * i}>
+                <motion.div
+                  className="rounded-sm overflow-hidden shadow-lg shadow-charcoal/5"
+                  whileHover={{ scale: 1.01 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <img src={img.src} alt={img.alt} className="w-full h-auto" />
+                </motion.div>
+              </AnimatedSection>
+            ))}
           </div>
         )}
       </div>
