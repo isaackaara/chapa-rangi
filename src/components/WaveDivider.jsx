@@ -3,31 +3,30 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
     cream: '#F5F0E8',
     teal: '#1A3A3A',
     pink: '#E8638B',
+    white: '#FDFBF7',
   }
 
-  // Normal: wave rises up from bottom, "from" color is background, "to" color fills the wave rising up
-  // Flip: wave hangs down from top, "from" color fills the wave hanging down, "to" color is background
-  // No CSS rotation needed, we just draw different SVG paths
-
   if (flip) {
-    // Wave hangs down: from-color on top (wave), to-color on bottom (background)
+    // Wave hangs down: from-color on top, to-color on bottom
     return (
       <div
-        className="w-full overflow-hidden leading-none"
-        style={{ backgroundColor: colorMap[to], marginTop: '-4px', paddingTop: '4px' }}
+        className="w-full leading-none relative z-10"
+        style={{
+          marginTop: '-2px',
+          marginBottom: '-2px',
+        }}
       >
         <svg
-          viewBox="0 0 1440 80"
-          fill="none"
+          viewBox="0 0 1440 100"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-auto block"
           preserveAspectRatio="none"
         >
-          {/* Background rect of "from" color filling the top */}
-          <rect width="1440" height="80" fill={colorMap[from]} />
-          {/* Wave cutout: to-color rises up, eating into the from-color */}
+          {/* Top strip in "from" color to overlap section above */}
+          <rect width="1440" height="100" fill={colorMap[from]} />
+          {/* Wave: to-color rises up */}
           <path
-            d="M0 40C240 0 480 80 720 40C960 0 1200 80 1440 40V81H0V40Z"
+            d="M0 50C240 10 480 90 720 50C960 10 1200 90 1440 50V101H0V50Z"
             fill={colorMap[to]}
           />
         </svg>
@@ -38,19 +37,23 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
   // Normal: wave rises up from bottom
   return (
     <div
-      className="w-full overflow-hidden leading-none relative"
-      style={{ backgroundColor: colorMap[from], marginTop: '-4px', paddingTop: '4px', marginBottom: '-1px' }}
+      className="w-full leading-none relative z-10"
+      style={{
+        marginTop: '-2px',
+        marginBottom: '-2px',
+      }}
     >
       <svg
-        viewBox="0 0 1440 80"
-        fill="none"
+        viewBox="0 0 1440 100"
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-auto block"
         preserveAspectRatio="none"
       >
-        <rect width="1440" height="80" fill={colorMap[from]} />
+        {/* Full rect in "from" color to overlap section above */}
+        <rect width="1440" height="100" fill={colorMap[from]} />
+        {/* Wave: to-color rises up */}
         <path
-          d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V81H0V40Z"
+          d="M0 50C240 90 480 10 720 50C960 90 1200 10 1440 50V101H0V50Z"
           fill={colorMap[to]}
         />
       </svg>
