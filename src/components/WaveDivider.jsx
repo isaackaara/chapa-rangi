@@ -14,7 +14,7 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
     return (
       <div
         className="w-full overflow-hidden leading-none"
-        style={{ backgroundColor: colorMap[to], marginTop: '-1px' }}
+        style={{ backgroundColor: colorMap[to], marginTop: '-4px', paddingTop: '4px' }}
       >
         <svg
           viewBox="0 0 1440 80"
@@ -38,8 +38,8 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
   // Normal: wave rises up from bottom
   return (
     <div
-      className="w-full overflow-hidden leading-none"
-      style={{ backgroundColor: colorMap[from], marginTop: '-2px', marginBottom: '-1px' }}
+      className="w-full overflow-hidden leading-none relative"
+      style={{ backgroundColor: colorMap[from], marginTop: '-4px', paddingTop: '4px', marginBottom: '-1px' }}
     >
       <svg
         viewBox="0 0 1440 80"
@@ -48,7 +48,7 @@ export default function WaveDivider({ from = 'cream', to = 'teal', flip = false 
         className="w-full h-auto block"
         preserveAspectRatio="none"
       >
-        <rect width="1440" height="40" fill={colorMap[from]} />
+        <rect width="1440" height="80" fill={colorMap[from]} />
         <path
           d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V81H0V40Z"
           fill={colorMap[to]}
