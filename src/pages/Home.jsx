@@ -110,7 +110,7 @@ const projects = [
     image: '/portfolio/african-footprints.jpg',
   },
   {
-    name: 'Bundu Cafe',
+    name: 'Bundu Café',
     slug: 'bundu-cafe',
     category: 'Brand Identity',
     image: '/portfolio/bundu-cafe.jpg',

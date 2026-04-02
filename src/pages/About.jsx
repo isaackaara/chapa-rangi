@@ -146,7 +146,7 @@ export default function About() {
             {principles.map((p, i) => (
               <AnimatedSection key={p.title} delay={i * 0.1}>
                 <Asterisk
-                  color="green"
+                  color="pink"
                   size={44}
                   animate="spin"
                   delay={i * 0.12}
